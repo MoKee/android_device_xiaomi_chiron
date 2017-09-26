@@ -1,0 +1,4 @@
+# enable navigation bar
+qemu.hw.mainkeys=0
+
+ro.boot.fingerprint=fpc
