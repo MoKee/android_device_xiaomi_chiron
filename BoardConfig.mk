@@ -24,5 +24,8 @@ TARGET_OTA_ASSERT_DEVICE := chiron
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+TARGET_PREBUILT_KERNEL := vendor/xiaomi/chiron/zImage
+
 # inherit from the proprietary version
 -include vendor/xiaomi/chiron/BoardConfigVendor.mk
