@@ -18,8 +18,11 @@ vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Audio firmware
-etc/firmware/tas2559_s_uCDSP.bin
-etc/firmware/tas2559_uCDSP.bin
+etc/firmware/tas2559_s_uCDSP.bin:vendor/firmware/tas2559_s_uCDSP.bin
+etc/firmware/tas2559_uCDSP.bin:vendor/firmware/tas2559_uCDSP.bin
+
+# Camera
+etc/dualcamera.png:vendor/etc/dualcamera.png
 
 # Camera actuator
 vendor/lib/libactuator_chiron_imx386_ak7372_semco.so
@@ -113,10 +116,10 @@ vendor/lib/libchromatix_chiron_ov5675_qtech_zsl_preview.so
 vendor/lib/libchromatix_chiron_ov5675_qtech_zsl_video.so
 
 # Camera configs
-etc/camera/camera_config.xml
-etc/camera/chiron_imx386_semco_chromatix.xml
-etc/camera/chiron_ov5675_primax_chromatix.xml
-etc/camera/chiron_ov5675_qtech_chromatix.xml
+etc/camera/camera_config.xml:vendor/etc/camera/camera_config.xml
+etc/camera/chiron_imx386_semco_chromatix.xml:vendor/etc/camera/chiron_imx386_semco_chromatix.xml
+etc/camera/chiron_ov5675_primax_chromatix.xml:vendor/etc/camera/chiron_ov5675_primax_chromatix.xml
+etc/camera/chiron_ov5675_qtech_chromatix.xml:vendor/etc/camera/chiron_ov5675_qtech_chromatix.xml
 
 # Camera eeproms
 vendor/lib/libmmcamera_chiron_imx386_semco_eeprom.so
@@ -140,11 +143,11 @@ vendor/lib64/libgf_hal.so
 vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so
 
 # Sensors
-etc/elliptic_sensor.xml
+etc/elliptic_sensor.xml:vendor/etc/elliptic.xml
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
-lib64/libnotifyaudiohal.so
-lib64/libultrasound.so
+lib64/libnotifyaudiohal.so:vendor/lib64/libnotifyaudiohal.so
+lib64/libultrasound.so:vendor/lib64/libultrasound.so
 vendor/lib64/sensors.elliptic.so
 
 # Thermal
