@@ -26,9 +26,9 @@ export VENDOR=xiaomi
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-LINEAGE_ROOT="$MY_DIR"/../../..
+MK_ROOT="$MY_DIR"/../../..
 
-DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+DEVICE_BLOB_ROOT="$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 #
 # Load elliptic config from vendor
